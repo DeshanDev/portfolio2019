@@ -1,0 +1,258 @@
+body, html{
+    height: calc(100% - 2em);
+    margin: 0;
+    font-family: 'montserrat';
+}
+
+body{
+    background: #4A00FB;
+    background: -moz-linear-gradient(45deg,#4A00FB 0%,#E600FF 100%);
+    background: -webkit-linear-gradient(45deg,#4A00FB 0%,#E600FF 100%);
+    background: linear-gradient(45deg,#4A00FB 0%,#E600FF 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+aside{
+    color: #fff;
+    display: grid;
+    grid-template-columns: auto 40px;
+    padding: 2em;
+}
+
+img{
+    width: 40px;
+    cursor: pointer;
+}
+
+figure{
+    margin: 0;
+}
+
+figcaption{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.active{
+    position: absolute;
+    display: block;
+    background: #fff;
+    width: 50%;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+ul{
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8em;
+    display: block;
+    padding: 1.5em 3em;
+    background-color: rgba(255, 255, 255, .35);
+    color: #000;
+}
+
+main{
+    background: #fff;
+    padding: 5em 1.4em;
+}
+
+#mobileAvatar{
+    border-radius: 50%;
+    /* background: #fff; */
+    background: url('../images/profileMobile.jpg');
+    width: 283px;
+    height: 283px;
+    margin: 1.2em auto .5em auto;
+}
+
+#aboutmobileAvatar{
+    border-radius: 50%;
+    /* background: #545151; */
+    background: url('../images/aboutmobileAvatar.jpg');
+    width: 160px;
+    height: 160px;
+    margin: 1.2em auto .5em auto;
+}
+
+h1{
+    margin: 0;
+}
+
+p{
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.cta{
+    display: block;
+    color: #fff;
+    background: #0e7fff;
+    text-decoration: none;
+    padding: 16px 50px;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 2em 0;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+input[type=email]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+textarea{
+    resize: none;
+    width: 100%;
+}
+label {
+    padding: 8px 8px 15px 15px;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    /* font-size: larger; */
+    font-style: normal;
+}
+input[type=submit] {
+    background-color: #0e7fff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media only screen and (min-width: 768px) {
+    body{
+        display: grid;
+        grid-template-columns: 20% auto;
+        padding: 2em;
+    }
+
+    img{
+        display: none;
+    }
+
+    aside{
+        background: #DCE1F6;
+        grid-template-columns: auto;
+        grid-template-rows: 20% auto;
+        padding: 0;
+    }
+
+    .mainHome{
+        padding: 4em;
+        background: white url('../images/Path2.svg') no-repeat bottom right;
+        background-size: 70%;
+    }
+
+    #avatar{
+        border-radius: 50%;
+        /* background: #fff; */
+        background: url('../images/profile.jpg');
+        width: 80px;
+        height: 80px;
+        margin: 2em auto 1em auto;
+    }
+
+    .hidden-desktop{
+        display: none;
+    }
+
+    figcaption{
+        text-align: center;
+        color: #000;
+    }
+
+    ul{
+        display: block;
+        margin-top: 2em;
+        position: relative !important;
+        background: none !important;
+        width: 100% !important;
+    }
+
+    ul li a:hover{
+        background-color: #fff;
+    }
+
+    nav{
+        background: none;
+    }
+
+    .cta{
+        display: inline-block;
+        font-size: 1.3em;
+        padding: .8em 3em;
+    }
+
+    h1{
+        font-size: 3em;
+        margin-top: 1.5em;
+    }
+
+    p{
+        font-size: 1.5em;
+    }
+
+    ul li a.active{
+        background: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: .8em;
+        display: block;
+        padding: 1.5em 3em;
+    }
+
+    .social-media{
+        display: none;
+        grid-gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .img{
+        width: 160px;
+        height: 160px;
+    }
+
+    a{
+        text-decoration: none;
+    }
+}
